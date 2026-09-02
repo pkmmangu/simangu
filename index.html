@@ -2,46 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
   <title>SIMANGU</title>
-  <link rel="icon" href="https://puskesmasmanguharjo.madiunkota.go.id/wp-content/uploads/2025/10/icon-app-pkm.png" type="image/x-icon">
+  <link
+    rel="icon"
+    href="https://puskesmasmanguharjo.madiunkota.go.id/wp-content/uploads/2025/10/icon-app-pkm.png"
+    type="image/x-icon"
+  >
   <style>
     /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+	* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	}
 
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-      background: #ffffff;
-    }
+	html,
+	body {
+	  width: 100%;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+	  background: #ffffff;
+	}
 
-    .iframe-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-    }
+	.iframe-container {
+	  position: relative;
+	  width: 100%;
+	  height: 100vh;
+	  height: 100svh;
+	  height: 100dvh;
+	  overflow: hidden;
+	}
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+	iframe {
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  min-width: 0;
+	  min-height: 0;
+	  border: none;
+	  margin: 0;
+	  padding: 0;
+	  background: #ffffff;
+	}
+
+	@media (max-width: 768px) {
+	  html,
+	  body,
+	  .iframe-container {
+		width: 100%;
+		max-width: 100%;
+	  }
+
+	  .iframe-container {
+		height: 100dvh;
+		min-height: 100dvh;
+	  }
+
+	  iframe {
+		width: 100%;
+		height: 100dvh;
+	  }
+	}
   </style>
 </head>
+
 <body>
 
-  <!-- IFRAME -->
   <div class="iframe-container">
-    <iframe 
-      src="https://script.google.com/macros/s/AKfycbzfYPHZr4I7r6VvnvYMGXw2xJEq_IvIgvAx99tpx83z-0T-BCrgDtPAsS2Mf7ozQJSChA/exec" 
-      title="Data Pegawai"
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbzfYPHZr4I7r6VvnvYMGXw2xJEq_IvIgvAx99tpx83z-0T-BCrgDtPAsS2Mf7ozQJSChA/exec"
+      title="SIMANGU"
       allowfullscreen>
     </iframe>
   </div>
+
 </body>
 </html>
